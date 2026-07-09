@@ -23,6 +23,8 @@ import {
 import { renderGrowthCenterLayout } from "../layouts/growth-center.layout";
 import { renderExecutiveNarrative } from "../components/executive/executive-narrative";
 import { renderExecutiveInsight } from "../components/executive/executive-insight";
+import { renderAdaptiveFocusCard } from "../components/executive/adaptive-focus-card";
+import { renderBusinessPulse } from "../components/business/business-pulse";
 
 /**
  * Temporary renderers.
@@ -60,12 +62,12 @@ export function renderGrowthCenterPage(): string {
 
   html = html.replace(
     "{{adaptive-focus}}",
-    placeholder(viewModel.focus.title),
+    renderAdaptiveFocusCard(viewModel.focus),
   );
 
   html = html.replace(
     "{{business-pulse}}",
-    placeholder("Business Pulse™"),
+    renderBusinessPulse(viewModel.business),
   );
 
   html = html.replace(

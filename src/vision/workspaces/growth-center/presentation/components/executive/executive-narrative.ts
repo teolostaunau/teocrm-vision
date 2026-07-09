@@ -42,12 +42,18 @@ export function renderExecutiveNarrative(
           Impacto: ${narrative.impact}
         </span>
 
-        <button
-          class="gc-button gc-button--primary"
-          type="button"
-        >
-          ${narrative.action.label}
-        </button>
+        ${
+        narrative.action
+            ? `
+            <button
+                class="gc-button gc-button--primary"
+                type="button"
+            >
+                ${narrative.action.label}
+            </button>
+            `
+            : ""
+        }
 
       </footer>
 
