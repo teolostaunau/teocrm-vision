@@ -25,6 +25,7 @@ import { renderExecutiveNarrative } from "../components/executive/executive-narr
 import { renderExecutiveInsight } from "../components/executive/executive-insight";
 import { renderAdaptiveFocusCard } from "../components/executive/adaptive-focus-card";
 import { renderBusinessPulse } from "../components/business/business-pulse";
+import { renderBusinessAwareness } from "../components/business/business-awareness";
 
 /**
  * Temporary renderers.
@@ -77,7 +78,7 @@ export function renderGrowthCenterPage(): string {
 
   html = html.replace(
     "{{business-awareness}}",
-    placeholder("Business Awareness"),
+    renderBusinessAwareness(viewModel.awareness),
   );
 
   return html;
