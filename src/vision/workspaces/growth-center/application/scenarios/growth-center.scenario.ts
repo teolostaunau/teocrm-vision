@@ -246,3 +246,10 @@ export const growthCenterDemoScenario: GrowthCenterWorkspace = {
     ]
   }
 };
+
+/**
+ * Creates the default demo scenario used by Vision UI.
+ */
+export function createGrowthCenterScenario(): GrowthCenterWorkspace {
+  return growthCenterDemoScenario;
+}

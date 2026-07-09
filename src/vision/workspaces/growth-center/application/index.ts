@@ -9,7 +9,7 @@
  * -----------------------------------------------------------------------------
  */
 
-export { growthCenterDemoScenario } from "./scenarios/growth-center.scenario";
+export { createGrowthCenterScenario } from "./scenarios/growth-center.scenario";
 
 export { createGrowthCenterWorkspace } from "./factory/growth-center.factory";
 

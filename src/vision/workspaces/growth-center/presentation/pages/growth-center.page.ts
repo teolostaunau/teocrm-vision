@@ -19,6 +19,7 @@ import {
   createGrowthCenterWorkspace,
   presentGrowthCenterWorkspace,
 } from "../../application";
+import type { GrowthCenterWorkspace } from "../../domain";
 
 import { renderGrowthCenterLayout } from "../layouts/growth-center.layout";
 import { renderExecutiveNarrative } from "../components/executive/executive-narrative";
@@ -44,9 +45,7 @@ function placeholder(title: string): string {
 /**
  * Renders the Growth Center™ page.
  */
-export function renderGrowthCenterPage(): string {
-  const workspace = createGrowthCenterWorkspace();
-
+export function renderGrowthCenterPage(workspace: GrowthCenterWorkspace,): string {
   const viewModel = presentGrowthCenterWorkspace(workspace);
 
   let html = renderGrowthCenterLayout();
