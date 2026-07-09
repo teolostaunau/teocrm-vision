@@ -6,6 +6,7 @@
 
 import { loadComponent } from "./component-loader.js";
 import { Components } from "./component-registry.js";
+import { validateWorkspace } from "./workspace-schema.js";
 
 /* ==========================================================================
    Compose Workspace
