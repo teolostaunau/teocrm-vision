@@ -1,0 +1,152 @@
+/* ========================================================================== */
+/* COMPONENT: Prioridades Inteligentes™                                      */
+/* COMPONENT ID: WC-005                                                       */
+/* ========================================================================== */
+
+.priorities{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.priority-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.priority-card{
+
+    display:grid;
+
+    grid-template-columns:110px 1fr auto;
+
+    gap:24px;
+
+    align-items:center;
+
+    padding:22px;
+
+    border:1px solid var(--color-border);
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.25s ease;
+
+}
+
+.priority-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.priority-level{
+
+    text-align:center;
+
+    font-weight:700;
+
+    padding:10px;
+
+    border-radius:999px;
+
+    color:#fff;
+
+}
+
+.priority-level.high{
+
+    background:#DC2626;
+
+}
+
+.priority-level.medium{
+
+    background:#F59E0B;
+
+}
+
+.priority-level.low{
+
+    background:#16A34A;
+
+}
+
+.priority-content h3{
+
+    margin:0 0 8px;
+
+    font-size:1.05rem;
+
+}
+
+.priority-content p{
+
+    margin:0 0 10px;
+
+    color:var(--color-text-secondary);
+
+    line-height:1.6;
+
+}
+
+.priority-impact{
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    color:var(--color-primary);
+
+}
+
+.priority-action{
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:var(--color-primary);
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.priority-action:hover{
+
+    opacity:.92;
+
+}
+
+@media (max-width:900px){
+
+    .priority-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
