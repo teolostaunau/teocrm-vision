@@ -1,0 +1,161 @@
+/* ==========================================================
+   TeoCRM Vision Prototype v1.0
+   Design Tokens
+   ----------------------------------------------------------
+   Project : TeoCRM Vision
+   Version : 1.0.0
+   Author  : OpenAI + Teo Lostaunau
+   ========================================================== */
+
+/* ==========================================================
+   COLOR SYSTEM
+   ========================================================== */
+
+:root {
+
+    /* ------------------------------------------------------
+       Brand Colors
+    ------------------------------------------------------ */
+
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #DBEAFE;
+
+    --color-secondary: #14B8A6;
+    --color-secondary-light: #CCFBF1;
+
+    --color-accent: #F97316;
+    --color-accent-light: #FFEDD5;
+
+    /* ------------------------------------------------------
+       Semantic Colors
+    ------------------------------------------------------ */
+
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+    --color-info: #0EA5E9;
+
+    /* ------------------------------------------------------
+       Neutral Palette
+    ------------------------------------------------------ */
+
+    --color-white: #FFFFFF;
+
+    --gray-50: #F8FAFC;
+    --gray-100: #F1F5F9;
+    --gray-200: #E2E8F0;
+    --gray-300: #CBD5E1;
+    --gray-400: #94A3B8;
+    --gray-500: #64748B;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1E293B;
+    --gray-900: #0F172A;
+
+    /* ------------------------------------------------------
+       Backgrounds
+    ------------------------------------------------------ */
+
+    --background-page: #EEF4FB;
+    --background-card: #FFFFFF;
+    --background-sidebar: #0F172A;
+    --background-header: #FFFFFF;
+
+    /* ------------------------------------------------------
+       Borders
+    ------------------------------------------------------ */
+
+    --border-color: #E2E8F0;
+
+    /* ------------------------------------------------------
+       Text
+    ------------------------------------------------------ */
+
+    --text-primary: #1F2937;
+    --text-secondary: #64748B;
+    --text-muted: #94A3B8;
+    --text-white: #FFFFFF;
+
+    /* ======================================================
+       TYPOGRAPHY
+       ====================================================== */
+
+    --font-family:
+        "Segoe UI",
+        Inter,
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 22px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 36px;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height: 1.5;
+
+    /* ======================================================
+       SPACING
+       ====================================================== */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+
+    /* ======================================================
+       RADIUS
+       ====================================================== */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-pill: 999px;
+
+    /* ======================================================
+       SHADOWS
+       ====================================================== */
+
+    --shadow-sm:
+        0 1px 3px rgba(15, 23, 42, .08);
+
+    --shadow-md:
+        0 8px 20px rgba(15, 23, 42, .08);
+
+    --shadow-lg:
+        0 16px 40px rgba(15, 23, 42, .10);
+
+    /* ======================================================
+       LAYOUT
+       ====================================================== */
+
+    --sidebar-width: 260px;
+    --header-height: 72px;
+
+    --content-max-width: 1600px;
+
+    /* ======================================================
+       TRANSITIONS
+       ====================================================== */
+
+    --transition-fast: .20s ease;
+    --transition-normal: .30s ease;
+
+}
