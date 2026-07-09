@@ -22,6 +22,7 @@ import {
 
 import { renderGrowthCenterLayout } from "../layouts/growth-center.layout";
 import { renderExecutiveNarrative } from "../components/executive/executive-narrative";
+import { renderExecutiveInsight } from "../components/executive/executive-insight";
 
 /**
  * Temporary renderers.
@@ -53,8 +54,8 @@ export function renderGrowthCenterPage(): string {
   );
 
   html = html.replace(
-    "{{executive-insight}}",
-    placeholder(viewModel.insight.title),
+      "{{executive-insight}}",
+      renderExecutiveInsight(viewModel.insight),
   );
 
   html = html.replace(
