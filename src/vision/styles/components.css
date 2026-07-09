@@ -1,0 +1,292 @@
+/* ==========================================================================
+   TeoCRM Vision UI
+   Executive Design Language™ v1.0
+   Components
+   ========================================================================== */
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+.gc-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gc-space-4);
+
+  padding: var(--gc-space-5);
+
+  background: var(--gc-color-surface);
+
+  border: 1px solid var(--gc-color-border);
+  border-radius: var(--gc-radius-lg);
+
+  box-shadow: var(--gc-shadow-sm);
+
+  transition: var(--gc-transition);
+}
+
+.gc-card:hover {
+  box-shadow: var(--gc-shadow-md);
+}
+
+.gc-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gc-space-2);
+}
+
+.gc-card__eyebrow {
+  font-size: var(--gc-font-size-xs);
+
+  text-transform: uppercase;
+
+  letter-spacing: .08em;
+
+  color: var(--gc-color-muted);
+
+  font-weight: 700;
+}
+
+.gc-card__title {
+  margin: 0;
+
+  font-size: var(--gc-font-size-xl);
+
+  font-weight: 700;
+
+  color: var(--gc-color-text);
+}
+
+.gc-card__summary,
+.gc-card__description,
+.gc-card__reason {
+  margin: 0;
+
+  color: var(--gc-color-muted);
+
+  line-height: 1.6;
+}
+
+.gc-card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--gc-space-3);
+
+  flex-wrap: wrap;
+
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.gc-button {
+  appearance: none;
+
+  border: none;
+
+  border-radius: var(--gc-radius-md);
+
+  padding:
+    .75rem
+    1.25rem;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: var(--gc-transition);
+}
+
+.gc-button--primary {
+  color: white;
+
+  background: var(--gc-color-primary);
+}
+
+.gc-button--primary:hover {
+  background: var(--gc-color-primary-hover);
+}
+
+.gc-button--secondary {
+  background: transparent;
+
+  border: 1px solid var(--gc-color-border);
+
+  color: var(--gc-color-text);
+}
+
+/* ==========================================================================
+   Priority Badge
+   ========================================================================== */
+
+.gc-priority {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding:
+    .35rem
+    .75rem;
+
+  border-radius: 999px;
+
+  font-size: .80rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.gc-priority--low {
+  background: rgba(34,197,94,.12);
+  color: #15803d;
+}
+
+.gc-priority--medium {
+  background: rgba(234,179,8,.15);
+  color: #a16207;
+}
+
+.gc-priority--high {
+  background: rgba(239,68,68,.12);
+  color: #b91c1c;
+}
+
+/* ==========================================================================
+   Trend
+   ========================================================================== */
+
+.gc-trend {
+  font-size: .80rem;
+  font-weight: 700;
+}
+
+.gc-trend--up {
+  color: var(--gc-color-success);
+}
+
+.gc-trend--down {
+  color: var(--gc-color-danger);
+}
+
+.gc-trend--stable {
+  color: var(--gc-color-muted);
+}
+
+/* ==========================================================================
+   Metrics
+   ========================================================================== */
+
+.gc-metrics {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gc-space-3);
+}
+
+.gc-metric {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: var(--gc-space-3);
+}
+
+.gc-metric__label {
+  color: var(--gc-color-muted);
+}
+
+.gc-metric__value {
+  font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   Awareness
+   ========================================================================== */
+
+.gc-awareness {
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--gc-space-4);
+}
+
+.gc-awareness__item {
+  display: flex;
+
+  gap: var(--gc-space-3);
+
+  align-items: flex-start;
+}
+
+.gc-awareness__content p {
+  margin:
+    .35rem
+    0;
+}
+
+.gc-awareness__time {
+  color: var(--gc-color-muted);
+
+  font-size: .80rem;
+}
+
+/* ==========================================================================
+   Agenda
+   ========================================================================== */
+
+.gc-agenda {
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--gc-space-4);
+}
+
+.gc-agenda__item {
+
+  display: grid;
+
+  grid-template-columns: 90px 1fr;
+
+  gap: var(--gc-space-4);
+}
+
+.gc-agenda__time {
+
+  font-weight: 700;
+
+  color: var(--gc-color-primary);
+}
+
+.gc-agenda__assignee {
+
+  display: inline-block;
+
+  margin-top: .50rem;
+
+  color: var(--gc-color-muted);
+
+  font-size: .85rem;
+}
