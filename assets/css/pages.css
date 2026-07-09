@@ -1,0 +1,338 @@
+/* ==========================================================
+   TeoCRM Vision Prototype v1.0
+   Page Styles
+   ========================================================== */
+
+/* ==========================================================
+   GROWTH CENTER
+   ========================================================== */
+
+.morning-brief{
+    margin-bottom:var(--space-8);
+}
+
+.morning-title{
+    margin:0;
+    font-size:34px;
+    font-weight:700;
+}
+
+.morning-subtitle{
+    margin-top:10px;
+    color:var(--text-secondary);
+}
+
+.business-status{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:24px;
+
+    margin-bottom:32px;
+
+}
+
+.growth-pulse{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    min-height:240px;
+
+}
+
+.growth-score{
+
+    font-size:72px;
+    font-weight:700;
+    color:var(--color-primary);
+
+}
+
+.growth-label{
+
+    margin-top:8px;
+
+    color:var(--text-secondary);
+
+}
+
+/* ==========================================================
+   KPI GRID
+   ========================================================== */
+
+.kpi-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+/* ==========================================================
+   FOCUS TODAY
+   ========================================================== */
+
+.focus-list{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.focus-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-md);
+
+}
+
+/* ==========================================================
+   AI DIRECTOR
+   ========================================================== */
+
+.ai-director{
+
+    margin-top:32px;
+
+}
+
+/* ==========================================================
+   TIMELINE
+   ========================================================== */
+
+.timeline-panel{
+
+    margin-top:32px;
+
+}
+
+/* ==========================================================
+   INSIGHTS
+   ========================================================== */
+
+.insights-panel{
+
+    margin-top:32px;
+
+}
+
+/* ==========================================================
+   INBOX
+   ========================================================== */
+
+.inbox-layout{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr 340px;
+
+    gap:24px;
+
+}
+
+.conversation-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.message-window{
+
+    min-height:600px;
+
+}
+
+.contact-panel{
+
+    min-height:600px;
+
+}
+
+/* ==========================================================
+   CRM
+   ========================================================== */
+
+.crm-layout{
+
+    display:grid;
+
+    grid-template-columns:360px 1fr;
+
+    gap:24px;
+
+}
+
+/* ==========================================================
+   PIPELINE
+   ========================================================== */
+
+.pipeline-board{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+}
+
+.pipeline-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.pipeline-card{
+
+    background:white;
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-md);
+
+    padding:16px;
+
+}
+
+/* ==========================================================
+   AUTOMATIONS
+   ========================================================== */
+
+.flow{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.flow-step{
+
+    min-width:180px;
+
+}
+
+/* ==========================================================
+   ANALYTICS
+   ========================================================== */
+
+.chart-placeholder{
+
+    height:320px;
+
+    border-radius:var(--radius-lg);
+
+    border:2px dashed var(--border-color);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--text-secondary);
+
+}
+
+/* ==========================================================
+   SETTINGS
+   ========================================================== */
+
+.settings-layout{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    gap:24px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media(max-width:1200px){
+
+    .business-status{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .kpi-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .pipeline-board{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .crm-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .inbox-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .kpi-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .pipeline-board{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .settings-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
