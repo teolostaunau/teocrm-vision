@@ -10,11 +10,7 @@
  * -----------------------------------------------------------------------------
  */
 
-import type { GrowthCenterViewModel } from "../../application";
-
-export function renderGrowthCenterLayout(
-  viewModel: GrowthCenterViewModel,
-): string {
+export function renderGrowthCenterLayout(): string {
   return `
     <main class="gc-workspace">
 
