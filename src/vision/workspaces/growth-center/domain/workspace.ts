@@ -48,6 +48,16 @@ export type GrowthCenterWorkspace = Readonly<{
   state: WorkspaceState;
 
   /**
+   * Timestamp indicating when the workspace was generated.
+   */
+  generatedAt: Date;
+
+  /**
+   * Workspace version.
+   */
+  version: string;
+  
+  /**
    * Executive welcome.
    */
   narrative: ExecutiveNarrative;
