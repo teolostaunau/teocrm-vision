@@ -1,0 +1,199 @@
+/* ==========================================================================
+   TeoCRM Vision UI
+   Executive Design Language™ v1.0
+   Growth Center Workspace
+   ========================================================================== */
+
+.gc-workspace {
+
+  display: grid;
+
+  gap: var(--gc-space-5);
+
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding: var(--gc-space-6);
+
+  background: var(--gc-color-background);
+
+  font-family: var(--gc-font-family);
+
+  color: var(--gc-color-text);
+}
+
+/* ==========================================================================
+   Desktop Layout
+   ========================================================================== */
+
+@media (min-width: 1200px) {
+
+  .gc-workspace {
+
+    grid-template-columns:
+      minmax(0, 2fr)
+      minmax(340px, 1fr);
+
+    grid-template-areas:
+
+      "narrative awareness"
+
+      "insight awareness"
+
+      "focus business"
+
+      "focus productivity";
+  }
+
+}
+
+/* ==========================================================================
+   Tablet Layout
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width:1199px) {
+
+  .gc-workspace {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    grid-template-areas:
+
+      "narrative narrative"
+
+      "insight insight"
+
+      "focus focus"
+
+      "business awareness"
+
+      "productivity productivity";
+  }
+
+}
+
+/* ==========================================================================
+   Mobile Layout
+   ========================================================================== */
+
+@media (max-width:767px) {
+
+  .gc-workspace {
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+
+      "narrative"
+
+      "insight"
+
+      "focus"
+
+      "business"
+
+      "awareness"
+
+      "productivity";
+  }
+
+}
+
+/* ==========================================================================
+   Workspace Areas
+   ========================================================================== */
+
+.gc-section--narrative {
+  grid-area: narrative;
+}
+
+.gc-section--insight {
+  grid-area: insight;
+}
+
+.gc-section--focus {
+  grid-area: focus;
+}
+
+.gc-section--business {
+  grid-area: business;
+}
+
+.gc-section--awareness {
+  grid-area: awareness;
+}
+
+.gc-section--productivity {
+  grid-area: productivity;
+}
+
+/* ==========================================================================
+   Adaptive Focus Highlight
+   ========================================================================== */
+
+.gc-section--focus .gc-card {
+
+  border-left: 6px solid var(--gc-color-primary);
+
+  box-shadow: var(--gc-shadow-md);
+
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Narrative
+   ========================================================================== */
+
+.gc-section--narrative .gc-card {
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(37,99,235,.04),
+      transparent
+    );
+
+}
+
+/* ==========================================================================
+   Insight
+   ========================================================================== */
+
+.gc-section--insight .gc-card {
+
+  border-color:
+    rgba(37,99,235,.25);
+
+}
+
+/* ==========================================================================
+   Workspace Animation
+   ========================================================================== */
+
+.gc-section {
+
+  animation:
+    gcFade .35s ease forwards;
+}
+
+@keyframes gcFade {
+
+  from {
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+  }
+
+  to {
+
+    opacity:1;
+
+    transform:none;
+
+  }
+
+}
