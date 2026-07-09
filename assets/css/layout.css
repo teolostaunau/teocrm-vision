@@ -398,3 +398,130 @@ textarea {
     }
 
 }
+
+/* ==========================================================
+   FOUNDATION 07
+   EXECUTIVE WORKSPACE
+========================================================== */
+
+.executive-grid{
+
+    display:grid;
+
+    grid-template-columns:minmax(0,2fr) 380px;
+
+    gap:28px;
+
+    align-items:start;
+
+    margin-top:32px;
+
+}
+
+.executive-main{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.executive-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    position:sticky;
+
+    top:24px;
+
+}
+
+/* ==========================================================
+   TWO COLUMN CONTENT
+========================================================== */
+
+.split-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:24px;
+
+}
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+
+/* ==========================================================
+   HERO AREA
+========================================================== */
+
+.hero-section{
+
+    margin-bottom:8px;
+
+}
+
+.hero-section .morning-title{
+
+    margin-bottom:12px;
+
+}
+
+.hero-section .morning-subtitle{
+
+    max-width:760px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   EXECUTIVE BLOCKS
+========================================================== */
+
+.executive-block{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1200px){
+
+    .executive-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .executive-sidebar{
+
+        position:static;
+
+    }
+
+    .split-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
