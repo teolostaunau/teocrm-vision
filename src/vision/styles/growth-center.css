@@ -197,3 +197,207 @@
   }
 
 }
+
+.gc-card__subtitle {
+
+    margin-top: .4rem;
+
+    color: var(--gc-text-muted);
+
+    font-size: .85rem;
+
+}
+
+.gc-briefing {
+
+    margin-top: 1.5rem;
+
+    padding: 1rem 1.25rem;
+
+    border-left: 4px solid var(--gc-primary);
+
+    background: rgba(37,99,235,.04);
+
+    border-radius: .75rem;
+
+}
+
+.gc-briefing strong {
+
+    display: block;
+
+    margin-bottom: .75rem;
+
+}
+
+/* =======================================================
+   HERO EXPERIENCE
+======================================================= */
+
+.gc-hero{
+
+    margin-bottom:3rem;
+
+    padding:3rem;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb 0%,
+            #1d4ed8 100%
+        );
+
+    color:white;
+
+    box-shadow:
+        0 20px 50px rgba(37,99,235,.25);
+
+}
+
+.gc-hero__content{
+
+    max-width:760px;
+
+}
+
+.gc-hero__eyebrow{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+    padding:.35rem .8rem;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.18);
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+}
+
+.gc-hero__title{
+
+    margin:0;
+
+    font-size:2.5rem;
+
+    line-height:1.15;
+
+}
+
+.gc-hero__lead{
+
+    margin-top:1.5rem;
+
+    font-size:1.3rem;
+
+    opacity:.95;
+
+}
+
+.gc-hero__message{
+
+    margin:1.25rem 0 2rem;
+
+    max-width:620px;
+
+    font-size:1.1rem;
+
+    line-height:1.7;
+
+    opacity:.92;
+
+}
+
+.gc-hero__actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin-top:2rem;
+
+}
+
+.gc-hero__hint{
+
+    opacity:.75;
+
+    font-size:.9rem;
+
+}
+
+/* ==========================================================
+   OPPORTUNITY CARD
+========================================================== */
+
+.gc-opportunity{
+
+    border-left:6px solid #2563eb;
+
+}
+
+.gc-opportunity__badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    padding:.4rem .8rem;
+
+    margin-bottom:1rem;
+
+    border-radius:999px;
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:.05em;
+
+}
+
+.gc-opportunity__title{
+
+    margin:0;
+
+    font-size:1.8rem;
+
+}
+
+.gc-opportunity__summary{
+
+    margin:1rem 0;
+
+    font-size:1.05rem;
+
+    line-height:1.7;
+
+}
+
+.gc-opportunity__recommendation{
+
+    padding:1rem;
+
+    margin-bottom:1.5rem;
+
+    border-radius:12px;
+
+    background:#f8fafc;
+
+}

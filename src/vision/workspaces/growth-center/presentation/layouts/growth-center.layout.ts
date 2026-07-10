@@ -12,31 +12,77 @@
 
 export function renderGrowthCenterLayout(): string {
   return `
-    <main class="gc-workspace">
+    <main class="gc-layout">
 
-      <section class="gc-section gc-section--narrative">
-        {{executive-narrative}}
-      </section>
+    <section class="gc-hero">
 
-      <section class="gc-section gc-section--insight">
-        {{executive-insight}}
-      </section>
+      <div class="gc-hero__content">
 
-      <section class="gc-section gc-section--focus">
-        {{adaptive-focus}}
-      </section>
+        <span class="gc-hero__eyebrow">
 
-      <section class="gc-section gc-section--business">
-        {{business-pulse}}
-      </section>
+          TEO GROWTH™
 
-      <section class="gc-section gc-section--productivity">
-        {{productivity}}
-      </section>
+        </span>
 
-      <section class="gc-section gc-section--awareness">
-        {{business-awareness}}
-      </section>
+        <h1 class="gc-hero__title">
+
+          ☀️ Buenos días, Teo.
+
+        </h1>
+
+        <p class="gc-hero__lead">
+
+          Mientras tomabas tu café...
+
+          yo estuve trabajando.
+
+        </p>
+
+        <p class="gc-hero__message">
+
+          Revisé tus conversaciones, tus oportunidades
+          y el estado de tu negocio.
+
+          <br><br>
+
+          <strong>
+            Encontré dos oportunidades que pueden ayudarte
+            a crecer hoy.
+          </strong>
+
+        </p>
+
+        <div class="gc-hero__actions">
+
+          <button class="gc-button gc-button--primary">
+
+            🚀 Empezar mi día
+
+          </button>
+
+          <span class="gc-hero__hint">
+
+            Toma menos de 2 minutos.
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+      {{executive-narrative}}
+
+      {{executive-insight}}
+
+      {{adaptive-focus}}
+
+      {{business-pulse}}
+
+      {{productivity}}
+
+      {{business-awareness}}
 
     </main>
   `;

@@ -12,50 +12,43 @@
 import type { ExecutiveInsight } from "../../../domain";
 
 export function renderExecutiveInsight(
-  insight: ExecutiveInsight,
+    insight: ExecutiveInsight,
 ): string {
-  return `
-    <article class="gc-card gc-card--insight">
 
-      <header class="gc-card__header">
+    return `
+        <section class="gc-card gc-opportunity">
 
-        <span class="gc-card__eyebrow">
-          Executive Insight™
-        </span>
+            <div class="gc-opportunity__badge">
 
-        <h2 class="gc-card__title">
-          ${insight.title}
-        </h2>
+                🎯 TU MEJOR OPORTUNIDAD
 
-      </header>
+            </div>
 
-      <p class="gc-card__description">
-        ${insight.description}
-      </p>
+            <h2 class="gc-opportunity__title">
 
-      <p class="gc-card__reason">
-        ${insight.reason}
-      </p>
+                ${insight.title}
 
-      <footer class="gc-card__footer">
+            </h2>
 
-        <span class="gc-priority gc-priority--${insight.priority}">
-          Prioridad: ${insight.priority}
-        </span>
+            <p class="gc-opportunity__summary">
 
-        <span class="gc-confidence">
-          Confianza ${insight.confidence}%
-        </span>
+                ${insight.summary}
 
-        <button
-          class="gc-button gc-button--primary"
-          type="button"
-        >
-          ${insight.action.label}
-        </button>
+            </p>
 
-      </footer>
+            <div class="gc-opportunity__recommendation">
 
-    </article>
-  `;
+                ${insight.recommendation}
+
+            </div>
+
+            <button class="gc-button gc-button--primary">
+
+                Llamar ahora →
+
+            </button>
+
+        </section>
+    `;
+
 }

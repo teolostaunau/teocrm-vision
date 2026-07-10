@@ -64,7 +64,7 @@ export function renderAdaptiveFocusCard(
           </span>
 
           <strong>
-            ${focus.owner}
+            ${focus.assignee}
           </strong>
 
         </div>

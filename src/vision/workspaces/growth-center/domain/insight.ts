@@ -41,6 +41,10 @@ export type ExecutiveInsight = Readonly<{
    */
   reason: string;
 
+  summary: string;
+
+  recommendation: string;
+
   /**
    * Expected business impact.
    */

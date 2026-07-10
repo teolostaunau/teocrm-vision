@@ -46,7 +46,13 @@ export const growthCenterDemoScenario: GrowthCenterWorkspace = {
   },
 
   insight: {
-    title: "Realiza seguimiento a la propuesta de Juan Pérez.",
+    title: "Juan Pérez está listo para avanzar.",
+
+    summary: 
+    "Volvió a revisar tu propuesta y todavía no recibe seguimiento.",
+
+    recommendation:
+    "Si realizas la llamada antes del mediodía, esta conversación tiene la mayor probabilidad de convertirse en una venta hoy.",    
 
     description:
       "La propuesta fue enviada hace dos días y aún no registra respuesta.",
