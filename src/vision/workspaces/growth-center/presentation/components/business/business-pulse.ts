@@ -15,57 +15,63 @@
 import type { BusinessPulse } from "../../../domain";
 
 export function renderBusinessPulse(
-  business: BusinessPulse,
+    business: BusinessPulse,
 ): string {
 
-  const metrics = business.metrics
-    .slice(0, 5)
-    .map(
-      (metric) => `
-        <li class="gc-metric">
+    return `
+        <section class="gc-card gc-snapshot">
 
-          <span class="gc-metric__label">
-            ${metric.label}
-          </span>
+            <div class="gc-snapshot__badge">
 
-          <strong class="gc-metric__value">
-            ${metric.value}
-          </strong>
+                📈 ASÍ AMANECE TU EMPRESA
 
-          <span class="gc-trend gc-trend--${metric.trend}">
-            ${metric.trend}
-          </span>
+            </div>
 
-        </li>
-      `,
-    )
-    .join("");
+            <ul class="gc-snapshot__list">
 
-  return `
-    <article class="gc-card gc-card--business">
+                <li>
 
-      <header class="gc-card__header">
+                    <span>🟢</span>
 
-        <span class="gc-card__eyebrow">
-          Business Pulse™
-        </span>
+                    <span>
+                        ${business.health}
+                    </span>
 
-        <h2 class="gc-card__title">
-        Business Pulse™
-        </h2>
+                </li>
 
-      </header>
+                <li>
 
-      <p class="gc-card__summary">
-        ${business.summary}
-      </p>
+                    <span>🟢</span>
 
-      <ul class="gc-metrics">
+                    <span>
+                        ${business.opportunities}
+                    </span>
 
-        ${metrics}
+                </li>
 
-      </ul>
+                <li>
 
-    </article>
-  `;
+                    <span>🟡</span>
+
+                    <span>
+                        ${business.pending}
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <span>🔵</span>
+
+                    <span>
+                        ${business.agenda}
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </section>
+    `;
+
 }

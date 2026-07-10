@@ -117,7 +117,13 @@ export const growthCenterDemoScenario: GrowthCenterWorkspace = {
   },
 
   business: {
-    health: "good",
+    health: "El ritmo comercial continúa creciendo.",
+
+    opportunities: "Dos conversaciones tienen alta probabilidad de convertirse en clientes hoy.",
+
+    pending: "Tres personas esperan una respuesta para seguir avanzando.",
+
+    agenda: "Tu agenda está bien distribuida para concentrarte en vender.",
 
     summary:
       "La actividad comercial mantiene una tendencia positiva durante la semana.",

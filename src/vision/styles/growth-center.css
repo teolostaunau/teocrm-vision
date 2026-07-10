@@ -401,3 +401,61 @@
     background:#f8fafc;
 
 }
+
+/* ==========================================================
+   BUSINESS SNAPSHOT
+========================================================== */
+
+.gc-snapshot{
+
+    border-left:6px solid #16a34a;
+
+}
+
+.gc-snapshot__badge{
+
+    display:inline-flex;
+
+    padding:.4rem .8rem;
+
+    margin-bottom:1.25rem;
+
+    border-radius:999px;
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+}
+
+.gc-snapshot__list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+    margin:0;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+.gc-snapshot__list li{
+
+    display:flex;
+
+    gap:.8rem;
+
+    align-items:flex-start;
+
+    line-height:1.6;
+
+}

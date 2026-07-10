@@ -51,8 +51,13 @@ export type BusinessPulse = Readonly<{
   /**
    * Overall business health.
    */
-  health: BusinessHealth;
+  /* health: BusinessHealth; */
 
+  health: string;
+  opportunities: string;
+  pending: string;
+  agenda: string;
+  
   /**
    * Short executive summary.
    */
