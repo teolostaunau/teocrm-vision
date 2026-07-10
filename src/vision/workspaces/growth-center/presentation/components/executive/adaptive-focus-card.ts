@@ -1,26 +1,16 @@
-/**
- * -----------------------------------------------------------------------------
- * TeoCRM Vision UI
- * Growth Center™
- * -----------------------------------------------------------------------------
- * Presentation - Adaptive Focus Card™
- *
- * Renders the primary business priority for the current day.
- * -----------------------------------------------------------------------------
- */
-
 import type { AdaptiveFocus } from "../../../domain";
 
 export function renderAdaptiveFocusCard(
   focus: AdaptiveFocus,
 ): string {
+
   return `
     <article class="gc-card gc-card--focus">
 
       <header class="gc-card__header">
 
         <span class="gc-card__eyebrow">
-          Adaptive Focus™
+          🎯 Adaptive Focus™
         </span>
 
         <h2 class="gc-card__title">
@@ -29,43 +19,66 @@ export function renderAdaptiveFocusCard(
 
       </header>
 
-      <p class="gc-card__description">
-        ${focus.description}
-      </p>
+      <section class="gc-focus">
 
-      <div class="gc-focus-meta">
+        <div class="gc-focus__score">
 
-        <span class="gc-priority gc-priority--${focus.priority}">
-          Prioridad: ${focus.priority}
-        </span>
+          <span class="gc-focus__score-value">
+            ${focus.priority}
+          </span>
 
-        <span class="gc-focus-type">
-          Tipo: ${focus.type}
-        </span>
+          <span class="gc-focus__score-label">
+            Prioridad actual
+          </span>
 
-      </div>
+        </div>
 
-      ${
-        focus.assignee
-          ? `
-            <section class="gc-focus-assignee">
+        <div class="gc-focus__message">
 
-              <strong>Responsable asignado</strong>
+          <p class="gc-card__summary">
+            Esta es la acción que tendrá mayor impacto en tu crecimiento si la realizas hoy.
+          </p>
 
-              <p>${focus.assignee}</p>
+        </div>
 
-            </section>
-          `
-          : ""
-      }
+      </section>
+
+      <section class="gc-focus__details">
+
+        <div class="gc-focus__item">
+
+          <span class="gc-focus__label">
+            Tipo
+          </span>
+
+          <strong>
+            ${focus.type}
+          </strong>
+
+        </div>
+
+        <div class="gc-focus__item">
+
+          <span class="gc-focus__label">
+            Responsable
+          </span>
+
+          <strong>
+            ${focus.owner}
+          </strong>
+
+        </div>
+
+      </section>
 
       <footer class="gc-card__footer">
 
         <button
-        class="gc-button gc-button--primary"
-        type="button"
-        >
-        ${focus.primaryAction.label}
+          class="gc-button gc-button--primary"
+          type="button">
+
+          Ejecutar acción
+
         </button>
 
       </footer>
