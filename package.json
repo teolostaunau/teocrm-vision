@@ -2,27 +2,31 @@
   "name": "teocrm-vision",
   "version": "1.0.0",
   "description": "Official Vision Prototype of TeoCRM.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "private": true,
+  "type": "module",
+
   "scripts": {
-    "dev": "live-server"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/teolostaunau/teocrm-vision.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
+
   "bugs": {
     "url": "https://github.com/teolostaunau/teocrm-vision/issues"
   },
+
   "homepage": "https://github.com/teolostaunau/teocrm-vision#readme",
+
+  "license": "ISC",
+
   "devDependencies": {
-    "live-server": "^1.2.2",
-    "typescript": "^7.0.2"
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
   }
 }
