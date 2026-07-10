@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "live-server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/teolostaunau/teocrm-vision#readme",
   "devDependencies": {
+    "live-server": "^1.2.2",
     "typescript": "^7.0.2"
   }
 }

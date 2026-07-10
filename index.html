@@ -1,237 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TeoCRM Vision Prototype v1.0</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <!-- =====================================================
-         STYLES
-    ====================================================== -->
+    <title>TeoCRM Vision UI</title>
 
-    <link rel="stylesheet" href="assets/css/tokens.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
+    <link
+        rel="stylesheet"
+        href="./src/vision/styles/index.css">
 
 </head>
 
 <body>
 
-<div class="app">
-
-    <!-- =====================================================
-         SIDEBAR
-    ====================================================== -->
-
-    <aside class="sidebar">
-
-        <div class="sidebar-header">
-
-            <div class="sidebar-logo">
-
-                <!-- Reemplazaremos por el isotipo oficial -->
-                <div class="user-avatar">T</div>
-
-                <div>
-
-                    <div class="sidebar-title">
-                        TeoCRM
-                    </div>
-
-                    <div class="sidebar-subtitle">
-                        Intelligent Business Growth
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <nav class="sidebar-nav">
-
-            <div class="sidebar-section-title">
-                Workspace
-            </div>
-
-            <div class="sidebar-item active"
-                 data-page="growth-center">
-
-                📈 Growth Center™
-
-            </div>
-
-            <div class="sidebar-item"
-                 data-page="inbox">
-
-                💬 Inbox
-
-            </div>
-
-            <div class="sidebar-item"
-                 data-page="crm">
-
-                👥 CRM
-
-            </div>
-
-            <div class="sidebar-item"
-                 data-page="pipeline">
-
-                🎯 Pipeline
-
-            </div>
-
-            <div class="sidebar-item"
-                 data-page="automations">
-
-                ⚙️ Automations
-
-            </div>
-
-            <div class="sidebar-item"
-                 data-page="analytics">
-
-                📊 Analytics
-
-            </div>
-
-            <div class="sidebar-item"
-                 data-page="settings">
-
-                ⚙ Settings
-
-            </div>
-
-        </nav>
-
-    </aside>
-
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
-
-    <div class="main">
-
-        <!-- =================================================
-             HEADER
-        ================================================== -->
-
-        <header class="header">
-
-            <div class="header-left">
-
-                <div class="header-search">
-
-                    <input
-                        type="text"
-                        placeholder="Search anything..." />
-
-                </div>
-
-            </div>
-
-            <div class="header-right">
-
-                <div class="header-icon">❓</div>
-
-                <div class="header-icon">🔔</div>
-
-                <div class="user-menu">
-
-                    <div class="user-avatar">
-                        T
-                    </div>
-
-                    <div class="user-info">
-
-                        <div class="user-name">
-
-                            Teo Lostaunau
-
-                        </div>
-
-                        <div class="user-role">
-
-                            Founder · Teo Technologies
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </header>
-
-        <!-- ===============================================
-             WORKSPACE
-        ================================================ -->
-
-        <main
-            id="workspace"
-            class="workspace">
-
-            <div class="card">
-
-                <h2 class="card-title">
-
-                    🚀 TeoCRM Vision Prototype
-
-                </h2>
-
-                <p class="card-subtitle">
-
-                    Shell Principal cargado correctamente.
-
-                </p>
-
-                <p>
-
-                    A partir del siguiente incremento este espacio
-                    cargará dinámicamente:
-
-                </p>
-
-                <ul>
-
-                    <li>Growth Center™</li>
-
-                    <li>Inbox Inteligente</li>
-
-                    <li>CRM</li>
-
-                    <li>Pipeline</li>
-
-                    <li>Automations</li>
-
-                    <li>Analytics</li>
-
-                    <li>Settings</li>
-
-                </ul>
-
-            </div>
-
-        </main>
-
-    </div>
-
-</div>
-
-<!-- =====================================================
-     SCRIPTS
-====================================================== -->
-
-<script src="assets/js/state.js"></script>
-<script src="assets/js/data.js"></script>
-<script src="assets/js/navigation.js"></script>
-<script src="assets/js/loader.js"></script>
-<script src="assets/js/app.js"></script>
+    <div id="app"></div>
+
+    <script
+        type="module"
+        src="./src/vision/index.ts">
+    </script>
 
 </body>
+
 </html>
